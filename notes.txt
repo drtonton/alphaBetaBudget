@@ -1,0 +1,48 @@
+alpha static:
+	430 - rent
+	75 - gym
+	40 - citi (credit card)
+	90 - verizon (phone)
+	145 - chase (student loan)
+	---
+	780 - total
+
+beta static:
+	380 - uas ( student loan)
+	40 - geico (car ins.)
+	185 - navient (student loan) 
+	---
+	605 - total
+
+pay per period: 1430
+
+alpha left after static (call this "a"): 650
+	
+beta/left after static (call this "b"): 825
+
+dynamic expenditures (monthly):
+	200 - gas
+	400 - food
+	200 - fun/extra
+	150 - utils/house
+	---
+	950 / 475 (d) - monthly/period need for dynamics
+
+a(650) - d(475) = 175 (call this "savedA") - put this amount to savings or a debt
+b(825) - d(475) = 350 (call this "savedB") - put this amount to savings or a debt
+
+variables to track:
+	- whats left for gas (after each gas expenditure)
+	- whats left for food (after each food expenditure)
+	- whats left for fun (after each silly expenditure)
+	- money unspent end of period (grow checking acct? or allocate to save/debt? not sure. growing checking slowly would be smart to prep for emergency situations)
+	- money unspent end of month (same ? as above)
+	- variation of checking balance after month (to track growth)
+	- what acct balance should be (this ones vital... check about querying wells fargo api for balance)
+	- debt balances (to track)
+	
+
+Design Ideas & Notes:
+	1. use the raw_input capability in Python to capture spending inputs
+	2. make this a terminal application
+	3. 3 ** 2 equals 3^2 in python
