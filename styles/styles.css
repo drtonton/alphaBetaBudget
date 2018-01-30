@@ -1,0 +1,33 @@
+html {
+  font-size: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://searchengineland.com/figz/wp-content/seloads/2016/12/piggybank-calculator-budget-286872272-ss-1920.jpg");
+  background-position: center;
+}
+
+/* body {
+  background: rgb(65, 202, 184);
+} */
+
+.dynamics {
+  /* display: flex; */
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.dynamic {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
